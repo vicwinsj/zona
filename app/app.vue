@@ -1,5 +1,5 @@
 <template>
-  <div class="ml-8 bg-amber-400 text-black">
-    Wahttssup where my saunas at
-  </div>
+  <NuxtLayout>
+    <div class="ml-8 bg-pink-300 text-black">Wahttssup where my</div>
+  </NuxtLayout>
 </template>
