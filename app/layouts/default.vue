@@ -2,9 +2,10 @@
   <div class="min-h-screen flex flex-col">
     <!-- Header -->
     <header class="bg-gray-800 text-white p-4">
-      <nav class="container mx-auto">
-        <NuxtLink to="/">Hjem</NuxtLink> |
+      <nav class="flex gap-3">
+        <NuxtLink to="/">Hjem</NuxtLink>
         <NuxtLink to="/about">Om oss</NuxtLink>
+        <NuxtLink to="/finnsauna">Finn sauna</NuxtLink>
       </nav>
     </header>
 
