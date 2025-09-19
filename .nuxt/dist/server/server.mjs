@@ -1,1 +1,0 @@
-export { default } from "file:///Users/WikiVic/Desktop/zona/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
