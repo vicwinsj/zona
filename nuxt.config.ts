@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
+  plugins: ["~/plugins/fontawesome.js"],
   vite: {
     plugins: [tailwindcss()],
   },
@@ -13,6 +14,16 @@ export default defineNuxtConfig({
     families: [
       {
         name: "Raleway",
+        weights: ["400", "700"],
+        provider: "google",
+      },
+      {
+        name: "Ubuntu",
+        weights: ["400", "700"],
+        provider: "google",
+      },
+      {
+        name: "Cardo",
         weights: ["400", "700"],
         provider: "google",
       },

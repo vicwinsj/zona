@@ -2,6 +2,60 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-@theme {
-  --font-sans: "Raleway", serif;
+:root {
+  --back: #0e1918;
+  --front: #f5f3ef;
+  --forest: #173131;
+  --copper: #b87333;
+  --rust: #c65d39;
+  --wood: #90624c;
+  --carbon: #1a1a1a;
+  --font-raleway: "Raleway", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --font-cardo: "Cardo", serif;
+}
+
+@theme inline {
+  --color-back: var(--back);
+  --color-front: var(--front);
+  --color-forest: var(--forest);
+  --color-copper: var(--copper);
+  --color-rust: var(--rust);
+  --color-wood: var(--wood);
+  --color-carbon: var(--carbon);
+  --font-logo: var(--font-ubuntu);
+  --font-sans: var(--font-raleway);
+  --font-serif: var(--font-cardo);
+  --content-w: 1200px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-semibold text-2xl;
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+input {
+  @apply text-back px-2 py-1;
 }

@@ -1,6 +1,7 @@
 <template>
-  <div style="height:100vh; width:100vw">
+  <div class="h-150 w-full border-7 rounded-lg container mx-auto">
     <LMap
+      class="z-0!"
       ref="map"
       :zoom="zoom"
       :center="[47.21322, -1.559482]"
@@ -24,8 +25,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { LMap, LTileLayer, LMarker, LPopup } from '@vue-leaflet/vue-leaflet'
+import { ref } from "vue";
+import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet";
 
-const zoom = ref(6)
+const zoom = ref(6);
 </script>
