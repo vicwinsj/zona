@@ -3,12 +3,15 @@
 @import "@nuxt/ui";
 
 :root {
-  --back: #0e1918;
-  --front: #f5f3ef;
+  --wood: #1b1615;
+  --benchwood: #8d867b;
+  --cream: #ded5c5;
+  --fog: #dadada;
+  --stone: #35403f;
   --forest: #173131;
   --copper: #b87333;
   --rust: #c65d39;
-  --wood: #90624c;
+  --darkwood: #35241d;
   --carbon: #1a1a1a;
   --font-raleway: "Raleway", sans-serif;
   --font-ubuntu: "Ubuntu", sans-serif;
@@ -16,13 +19,18 @@
 }
 
 @theme inline {
-  --color-back: var(--back);
-  --color-front: var(--front);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-text: var(--text);
+  --color-text-background: var(--text-background);
+  --color-benchwood: var(--benchwood);
   --color-forest: var(--forest);
   --color-copper: var(--copper);
   --color-rust: var(--rust);
   --color-wood: var(--wood);
   --color-carbon: var(--carbon);
+  --color-fog: var(--fog);
+  --color-stone: var(--stone);
   --font-logo: var(--font-ubuntu);
   --font-sans: var(--font-raleway);
   --font-serif: var(--font-cardo);
@@ -31,9 +39,25 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
-    --foreground: #ededed;
+    --background: var(--wood);
+    --foreground: var(--cream);
+    --text: var(--fog);
+    --text-background: var(--carbon);
   }
+}
+
+.dark {
+  --background: var(--wood);
+  --foreground: var(--cream);
+  --text: var(--fog);
+  --text-background: var(--carbon);
+}
+
+.light {
+  --background: var(--fog);
+  --foreground: var(--wood);
+  --text: var(--carbon);
+  --text-background: var(--fog);
 }
 
 html {
@@ -57,5 +81,5 @@ button {
 }
 
 input {
-  @apply text-back px-2 py-1;
+  @apply text-sm text-carbon px-2 py-1;
 }

@@ -1,6 +1,8 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
+  faSun,
+  faMoon,
   faTemperatureFull,
   faBarsStaggered,
 } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +13,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 library.add(
+  faSun,
+  faMoon,
   faTemperatureFull,
   faBarsStaggered,
   faXTwitter,

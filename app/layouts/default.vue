@@ -1,11 +1,13 @@
 <template>
-  <div class="font-sans text-front min-h-screen flex flex-col bg-back">
-    <Header />
+  <div
+    class="font-sans text-foreground min-h-screen flex flex-col bg-background"
+  >
+    <LayoutHeader />
 
     <main class="flex-grow w-full py-5">
       <slot />
     </main>
 
-    <Footer />
+    <LayoutFooter />
   </div>
 </template>
