@@ -1,14 +1,16 @@
 <template>
-  <header class="container mx-auto py-5 flex justify-between items-center">
+  <header class="container mx-auto py-5 flex justify-between gap-10 items-center">
     <NuxtLink class="text-xs font-semibold font-logo flex items-start" to="/">
       <Logo />
     </NuxtLink>
 
-    <input class="bg-fog rounded-sm outline-0 focus:border-forest"></input>
+    <div class="w-1/2 relative"><input class="w-full bg-white/70 hover:bg-white focus:bg-white text-carbon rounded-sm outline-0 border-2 border-transparent transition-colors duration-300 focus:border-rust" placeholder="Search for your next sauna experience ..."></input>
+    <font-awesome-icon icon="search" class="absolute left-3 text-xl" />
+    </div>
 
     <div class="relative z-10 ">
       <button @click="toggleMenu" class="flex items-center text-text">
-        <font-awesome-icon icon="bars-staggered" class="relative text-xl" />
+        <font-awesome-icon icon="bars-staggered" class="text-xl" />
       </button>
 
       <nav

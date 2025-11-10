@@ -22,7 +22,7 @@
             </ul>
           </div>
         </div>
-        <div class="text-fog bg-benchwood h-50 w-1/3 p-3">
+        <div class="text-white bg-benchwood h-50 w-1/3 p-3">
           <ul>
             <li class="flex gap-3">
               <NuxtLink to=""
@@ -38,13 +38,13 @@
           </ul>
         </div>
       </div>
-      <div class="w-full flex flex-col items-center gap-3 pt-30">
+      <div class="text-white w-full flex flex-col items-center gap-3 pt-30">
         <div>
           <strong>Zona A/ÆSJ</strong>
           <p>Leif Tronstads veg 2, 7051 Trondheim</p>
         </div>
         <ColorToggle />
-        <p class="text-[10px] text-fog">©2025 VITO IT</p>
+        <p class="text-[10px]">©2025 VITO IT</p>
       </div>
     </div>
   </footer>

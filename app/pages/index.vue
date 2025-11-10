@@ -24,7 +24,7 @@
           ut?
         </p>
       </div>
-      <Button>Les mer</Button>
+      <FormButton variant="outline">Les mer</FormButton>
     </article>
   </section>
   <section class=""></section>

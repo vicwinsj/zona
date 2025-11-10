@@ -11,6 +11,7 @@
   --forest: #173131;
   --copper: #b87333;
   --rust: #c65d39;
+  --hrust: #97472c;
   --darkwood: #35241d;
   --carbon: #1a1a1a;
   --font-raleway: "Raleway", sans-serif;
@@ -27,6 +28,7 @@
   --color-forest: var(--forest);
   --color-copper: var(--copper);
   --color-rust: var(--rust);
+  --color-hrust: var(--hrust);
   --color-wood: var(--wood);
   --color-carbon: var(--carbon);
   --color-fog: var(--fog);
@@ -47,9 +49,9 @@
 }
 
 .dark {
-  --background: var(--wood);
+  --background: var(--stone);
   --foreground: var(--cream);
-  --text: var(--fog);
+  --text: white;
   --text-background: var(--carbon);
 }
 
@@ -57,7 +59,7 @@
   --background: var(--fog);
   --foreground: var(--wood);
   --text: var(--carbon);
-  --text-background: var(--fog);
+  --text-background: white;
 }
 
 html {
@@ -81,5 +83,9 @@ button {
 }
 
 input {
-  @apply text-sm text-carbon px-2 py-1;
+  @apply text-sm px-2 py-1;
+}
+
+input::placeholder {
+  @apply text-background;
 }
